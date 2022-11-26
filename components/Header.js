@@ -1,10 +1,12 @@
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 
-export default function Navbar() {
+const Header = () => {
    return (
-      <section className=' min-h-screen'>
-         <nav className=' py-10 mb-12 flex justify-between '>
-            <h1 className='text-2xl'>DevelopedbyCHarris</h1>
+      <section className=' top-0'>
+         <nav className=' py-4 mb-2 flex justify-between '>
+            <h1 className=' text-lg font-Nabla'>
+               DevelopedbyCHarris
+            </h1>
             <ul className=' flex items-center'>
                <li className=' pr-4'>
                   <BsFillMoonStarsFill className=' cursor-pointer  text-2xl' />
@@ -21,4 +23,6 @@ export default function Navbar() {
          </nav>
       </section>
    );
-}
+};
+
+export default Header;

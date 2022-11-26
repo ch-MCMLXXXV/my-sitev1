@@ -5,10 +5,10 @@ import {
    AiOutlineInstagram,
 } from 'react-icons/ai';
 
-export default function Footer() {
+const Footer = () => {
    return (
-      <div className=' fixed bottom-0 w-screen'>
-         <div className=' flex justify-evenly bg-gray-400  py-3  text-3xl'>
+      <div className=' fixed bottom-0 w-screen bg-slate-300'>
+         <div className=' flex justify-evenly py-3  text-3xl'>
             <a href='https://twitter.com/CHarris_SWE'>
                <AiOutlineTwitter />
             </a>
@@ -22,9 +22,10 @@ export default function Footer() {
                <AiOutlineInstagram />
             </a>
          </div>
-         <div className='  flex justify-center bg-gray-600 py-3'>
+         <div className='  flex justify-center bg-slate-400 py-3'>
             ©2022
          </div>
       </div>
    );
-}
+};
+export default Footer;
