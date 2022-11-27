@@ -4,7 +4,7 @@ const Header = () => {
    return (
       <section className=' top-0'>
          <nav className=' py-4 mb-2 flex justify-between '>
-            <h1 className=' text-lg font-Nabla'>
+            <h1 className=' text-lg font-Nabla animate-bounce'>
                DevelopedbyCHarris
             </h1>
             <ul className=' flex items-center'>
