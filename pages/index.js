@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import me3 from '../public/me3.PNG';
+import pixelme from '../public/pixelme.PNG';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
          <main className=' px-20'>
             <section>
                <div className=' text-center px-4'>
-                  <h2 className=' text-5xl py-2 font-medium font-ChakraPetch'>
+                  <h2 className=' text-5xl py-7 font-medium font-ChakraPetch'>
                      Courtney Harris
                   </h2>
                   <h3 className=' text-2xl py-2 font-ChakraPetch'>
@@ -32,11 +33,55 @@ export default function Home() {
                   </p>
                   <div className='  relative mx-auto rounded-full '>
                      <Image
-                        src={me3}
+                        src={pixelme}
                         alt='profile image'
                         width={300}
-                        className=' mx-auto rounded-full'
+                        className=' mx-auto'
                      />
+                  </div>
+               </div>
+            </section>
+            <section>
+               <div>
+                  <h2 className=' text-3xl  font-medium font-ChakraPetch'>
+                     Latest Projects
+                  </h2>
+                  <div>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.
+                     </p>
+                  </div>
+               </div>
+            </section>
+            <section>
+               <div>
+                  <h2 className=' text-3xl  font-medium font-ChakraPetch'>
+                     Blog Posts
+                  </h2>
+                  <div>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.
+                     </p>
                   </div>
                </div>
             </section>

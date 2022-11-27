@@ -7,8 +7,8 @@ import {
 
 const Footer = () => {
    return (
-      <div className=' fixed bottom-0 w-screen bg-slate-300'>
-         <div className=' flex justify-evenly py-3  text-3xl'>
+      <div className=' bottom-0 w-screen'>
+         <div className=' flex justify-evenly py-3  text-3xl bg-gradient-to-r from-teal-800 to-orange-300'>
             <a href='https://twitter.com/CHarris_SWE'>
                <AiOutlineTwitter />
             </a>
@@ -22,7 +22,7 @@ const Footer = () => {
                <AiOutlineInstagram />
             </a>
          </div>
-         <div className='  flex justify-center bg-slate-400 py-3'>
+         <div className='  flex justify-center bg-slate-400 py-3 text-lg '>
             ©2022
          </div>
       </div>
