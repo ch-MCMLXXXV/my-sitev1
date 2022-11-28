@@ -2,9 +2,30 @@ import Head from 'next/head';
 import Image from 'next/image';
 import me3 from '../public/me3.PNG';
 import pixelme from '../public/pixelme.PNG';
+import BlogPost from '../components/Blogposts';
 import styles from '../styles/Home.module.css';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+   const [posts, setPosts] = useState([]);
+
+   const getPosts = async () => {
+      try {
+         const res = await fetch(
+            'https://dev.to/api/articles?username=chmcmlxxxv&per_page=5'
+         );
+         const json = await res.json();
+         console.log(json);
+         setPosts(json);
+      } catch (error) {
+         console.log('error', error);
+      }
+   };
+
+   useEffect(() => {
+      getPosts();
+   }, []);
+
    return (
       <div className=' bg-gradient-to-r from-teal-800 to-orange-300 min-h-screen'>
          <Head>
@@ -68,9 +89,12 @@ export default function Home() {
                   <h2 className=' text-3xl  font-medium font-ChakraPetch'>
                      Blog Posts
                   </h2>
-                  <div>
+                  <div className=' text-justify  grid grid-cols-2 gap-5 '>
+                     {posts.map((post) => (
+                        <BlogPost key={post.id} post={post} />
+                     ))}
                      <p>
-                        Lorem ipsum dolor sit amet, consectetur
+                        {/* Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud
@@ -80,7 +104,7 @@ export default function Home() {
                         cillum dolore eu fugiat nulla pariatur.
                         Excepteur sint occaecat cupidatat non
                         proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.
+                        mollit anim id est laborum. */}
                      </p>
                   </div>
                </div>
