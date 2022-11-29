@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Arcade from '../public/Arcade.gif';
 import artcollector from '../public/artcollector.gif';
 import StrangersThings from '../public/StrangersThings.gif';
-import pixelme from '../public/pixelme.PNG';
+import pixelme from '../public/pixelme.png';
 import coming from '../public/coming.jpg';
 import BlogPost from '../components/Blogposts';
 import styles from '../styles/Home.module.css';
