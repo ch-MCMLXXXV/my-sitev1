@@ -22,8 +22,9 @@ const Footer = () => {
                <AiOutlineInstagram />
             </a>
          </div>
-         <div className='  flex justify-center bg-slate-400 py-3 text-lg '>
-            ©2022
+         <div className='  flex justify-center bg-gradient-to-r from-teal-800 to-orange-100 py-3 text-lg '>
+            ©2022:
+            <span className=' pl-1'>Designed by C.Harris</span>
          </div>
       </div>
    );

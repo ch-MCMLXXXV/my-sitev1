@@ -4,7 +4,7 @@ import Arcade from '../public/Arcade.gif';
 import artcollector from '../public/artcollector.gif';
 import StrangersThings from '../public/StrangersThings.gif';
 import pixelme from '../public/pixelme.PNG';
-
+import coming from '../public/coming.jpg';
 import BlogPost from '../components/Blogposts';
 import styles from '../styles/Home.module.css';
 import { useEffect, useState } from 'react';
@@ -39,7 +39,7 @@ export default function Home() {
             />
          </Head>
          <main className=' px-20'>
-            <section>
+            <section className=' py-20'>
                <div className=' text-center px-4'>
                   <h2 className=' text-5xl py-7 font-medium font-ChakraPetch'>
                      Courtney Harris
@@ -65,73 +65,130 @@ export default function Home() {
                   </div>
                </div>
             </section>
-            <section>
+            <section className='py-20'>
                <div>
                   <h2 className=' text-3xl underline font-medium font-ChakraPetch pb-10'>
-                     Latest Projects
+                     Projects
                   </h2>
                   <div>
-                     <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full pb-10'>
+                     <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full pb-10'>
                         <div className=' shadow-2xl  shadow-orange-700/50 w-full bg-white rounded-xl overflow-hidden cursor-pointer'>
                            <Image
                               src={artcollector}
-                              alt='Art Collector'
+                              alt='Art Collector Project'
                               height={400}
                               className=' object-cover w-full h-48'
                            />
 
                            <div className='relative p-4'>
-                              <h3 className='text-base md:text-xl font-medium text-gray-800'>
-                                 This is card title
+                              <h3 className='text-base md:text-xl font-medium text-gray-800 font-ChakraPetch'>
+                                 Art Collector
                               </h3>
 
-                              <p className='mt-4 text-base md:text-lg text-gray-600'>
-                                 Lorem ipsum dolor sit amet,
-                                 consectetur adipisicing elit ad
-                                 assumenda.
+                              <p className='mt-4 text-sm md:text-md text-gray-600 pb-3 font-ChakraPetch'>
+                                 React web app built using Harvard
+                                 University’s art collection API Built
+                                 front-end allowing the user to search
+                                 the art collection, showcasing all
+                                 art relevant to the search item
+                                 Developed with React and Javascript
+                              </p>
+                              <a
+                                 className='  text-gray-600 hover:text-orange-500 font-ChakraPetch'
+                                 href='https://github.com/ch-MCMLXXXV/UNIV_Art_Collector_React_Starter'
+                              >
+                                 Source Code...
+                              </a>
+                           </div>
+                        </div>
+
+                        <div className=' shadow-2xl  shadow-orange-700/50 w-full bg-white rounded-xl overflow-hidden cursor-pointer'>
+                           <Image
+                              src={StrangersThings}
+                              alt='StrangersThings Project'
+                              height={400}
+                              className=' object-cover w-full h-48'
+                           />
+
+                           <div className='relative p-4'>
+                              <h3 className='text-base md:text-xl font-medium text-gray-800 font-ChakraPetch'>
+                                 Strangers Things
+                              </h3>
+
+                              <p className='mt-4 text-sm md:text-md text-gray-600 pb-3 font-ChakraPetch'>
+                                 Full-stack application is similar to
+                                 Craigslist, allowing users to
+                                 register/log in and list items for
+                                 sale Utilizes API fetches and calls
+                                 to show the items for sale as well as
+                                 all the users items and messages
+                                 Developed with the React Javascrip
+                              </p>
+                              <a
+                                 className='  text-gray-600 hover:text-orange-500 font-ChakraPetch'
+                                 href='https://github.com/ch-MCMLXXXV/Stranger_Things'
+                              >
+                                 Source Code...
+                              </a>
+                           </div>
+                        </div>
+
+                        <div className=' shadow-2xl  shadow-orange-700/50 w-full bg-white rounded-xl overflow-hidden cursor-pointer'>
+                           <Image
+                              src={Arcade}
+                              alt='Arcade Project'
+                              height={400}
+                              className=' object-cover w-full h-48'
+                           />
+
+                           <div className='relative p-4'>
+                              <h3 className='text-base md:text-xl font-medium text-gray-800 font-ChakraPetch'>
+                                 Tic Tac Toe
+                              </h3>
+
+                              <p className='mt-4 text-sm md:text-md text-gray-600 pb-3 font-ChakraPetch'>
+                                 A simple tic tac toe game built using
+                                 React and Javascript
+                              </p>
+                              <a
+                                 className='  text-gray-600 hover:text-orange-500'
+                                 href='https://github.com/ch-MCMLXXXV/Arcade'
+                              >
+                                 Source Code...
+                              </a>
+                           </div>
+                        </div>
+                        <div className=' shadow-2xl  shadow-orange-700/50 w-full bg-white rounded-xl overflow-hidden cursor-pointer'>
+                           <Image
+                              src={coming}
+                              alt='Coming Soon'
+                              height={400}
+                              className=' object-cover w-full h-48'
+                           />
+
+                           <div className='relative p-4'>
+                              <h3 className='text-base md:text-xl font-medium text-gray-800 font-ChakraPetch'>
+                                 Coming Soon...
+                              </h3>
+
+                              <p className='mt-4 text-sm md:text-md text-gray-600 pb-3 font-ChakraPetch'>
+                                 Working on a new project. Stay Tuned!
                               </p>
                            </div>
                         </div>
                      </div>
-
-                     {/* <p>
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor
-                        in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.
-                     </p> */}
                   </div>
                </div>
             </section>
-            <section>
+            <section className='py-20'>
                <div>
                   <h2 className=' text-3xl underline  font-medium font-ChakraPetch pb-10'>
                      Blog Posts
                   </h2>
-                  <div className=' text-justify  grid  grid-flow-row-dense  grid-cols-2 gap-5 pb-10 '>
+                  <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full pb-10 '>
                      {posts.map((post) => (
                         <BlogPost key={post.id} post={post} />
                      ))}
-                     <p>
-                        {/* Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor
-                        in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum. */}
-                     </p>
                   </div>
                </div>
             </section>
