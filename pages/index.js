@@ -77,6 +77,7 @@ export default function Home() {
                               src={artcollector}
                               alt='Art Collector Project'
                               height={400}
+                              unoptimized={true}
                               className=' object-cover w-full h-48'
                            />
 
@@ -107,6 +108,7 @@ export default function Home() {
                               src={StrangersThings}
                               alt='StrangersThings Project'
                               height={400}
+                              unoptimized={true}
                               className=' object-cover w-full h-48'
                            />
 
@@ -138,6 +140,7 @@ export default function Home() {
                               src={Arcade}
                               alt='Arcade Project'
                               height={400}
+                              unoptimized={true}
                               className=' object-cover w-full h-48'
                            />
 
