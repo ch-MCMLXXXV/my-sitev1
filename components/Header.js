@@ -2,7 +2,7 @@ import { BsFillMoonStarsFill } from 'react-icons/bs';
 
 const Header = () => {
    return (
-      <section className=' top-0 bg-gradient-to-r from-teal-800 to-orange-300'>
+      <section className=' top-0 bg-gradient-to-r from-teal-800 to-orange-100'>
          <nav className=' py-4  flex justify-between '>
             <h1 className=' text-lg font-Nabla animate-bounce'>
                DevelopedbyCHarris
@@ -14,7 +14,7 @@ const Header = () => {
                <li>
                   <a
                      className=' bg-cyan-300 text-white px-4 py-2 rounded-lg'
-                     href='#'
+                     href='https://drive.google.com/file/d/1yMX_XnWgzAWCVL3K-g-EBOPLYsXTiAWN/view?usp=share_link'
                   >
                      Resume
                   </a>

@@ -8,7 +8,7 @@ import {
 const Footer = () => {
    return (
       <div className=' bottom-0 w-screen'>
-         <div className=' flex justify-evenly py-3  text-3xl bg-gradient-to-r from-teal-800 to-orange-300'>
+         <div className=' flex justify-evenly py-3  text-3xl bg-gradient-to-r from-teal-800 to-orange-100'>
             <a href='https://twitter.com/CHarris_SWE'>
                <AiOutlineTwitter />
             </a>

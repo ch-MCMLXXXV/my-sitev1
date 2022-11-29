@@ -1,7 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import me3 from '../public/me3.PNG';
+import Arcade from '../public/Arcade.gif';
+import artcollector from '../public/artcollector.gif';
+import StrangersThings from '../public/StrangersThings.gif';
 import pixelme from '../public/pixelme.PNG';
+
 import BlogPost from '../components/Blogposts';
 import styles from '../styles/Home.module.css';
 import { useEffect, useState } from 'react';
@@ -27,7 +30,7 @@ export default function Home() {
    }, []);
 
    return (
-      <div className=' bg-gradient-to-r from-teal-800 to-orange-300 min-h-screen'>
+      <div className=' bg-gradient-to-r from-teal-800 to-orange-100 min-h-screen'>
          <Head>
             <title>C.Harris Portfolio</title>
             <meta
@@ -64,11 +67,34 @@ export default function Home() {
             </section>
             <section>
                <div>
-                  <h2 className=' text-3xl  font-medium font-ChakraPetch'>
+                  <h2 className=' text-3xl underline font-medium font-ChakraPetch pb-10'>
                      Latest Projects
                   </h2>
                   <div>
-                     <p>
+                     <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full pb-10'>
+                        <div className=' shadow-2xl  shadow-orange-700/50 w-full bg-white rounded-xl overflow-hidden cursor-pointer'>
+                           <Image
+                              src={artcollector}
+                              alt='Art Collector'
+                              height={400}
+                              className=' object-cover w-full h-48'
+                           />
+
+                           <div className='relative p-4'>
+                              <h3 className='text-base md:text-xl font-medium text-gray-800'>
+                                 This is card title
+                              </h3>
+
+                              <p className='mt-4 text-base md:text-lg text-gray-600'>
+                                 Lorem ipsum dolor sit amet,
+                                 consectetur adipisicing elit ad
+                                 assumenda.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+
+                     {/* <p>
                         Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
@@ -80,16 +106,16 @@ export default function Home() {
                         Excepteur sint occaecat cupidatat non
                         proident, sunt in culpa qui officia deserunt
                         mollit anim id est laborum.
-                     </p>
+                     </p> */}
                   </div>
                </div>
             </section>
             <section>
                <div>
-                  <h2 className=' text-3xl  font-medium font-ChakraPetch'>
+                  <h2 className=' text-3xl underline  font-medium font-ChakraPetch pb-10'>
                      Blog Posts
                   </h2>
-                  <div className=' text-justify  grid grid-cols-2 gap-5 '>
+                  <div className=' text-justify  grid  grid-flow-row-dense  grid-cols-2 gap-5 pb-10 '>
                      {posts.map((post) => (
                         <BlogPost key={post.id} post={post} />
                      ))}
