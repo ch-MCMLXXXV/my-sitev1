@@ -14,7 +14,7 @@ const Header = () => {
                <li>
                   <a
                      className=' bg-cyan-300 text-white px-4 py-2 rounded-lg'
-                     href='https://drive.google.com/file/d/1yMX_XnWgzAWCVL3K-g-EBOPLYsXTiAWN/view?usp=share_link'
+                     href='https://docs.google.com/document/d/1lI6mssxksm2e8jCNOFaGSCuZwK-YKAnG/edit?usp=sharing&ouid=102613210394200483698&rtpof=true&sd=true'
                   >
                      Resume
                   </a>
