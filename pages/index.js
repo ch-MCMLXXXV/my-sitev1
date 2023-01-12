@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Arcade from '../public/Arcade.gif';
 import artcollector from '../public/artcollector.gif';
 import StrangersThings from '../public/StrangersThings.gif';
+import RecipeApp from '../public/RecipeApp.gif';
 import pixelme from '../public/pixelme.png';
 import coming from '../public/coming.jpg';
 import BlogPost from '../components/Blogposts';
@@ -105,8 +106,8 @@ export default function Home() {
 
                         <div className=' shadow-2xl  shadow-orange-700/50 w-full bg-white rounded-xl overflow-hidden cursor-pointer'>
                            <Image
-                              src={StrangersThings}
-                              alt='StrangersThings Project'
+                              src={RecipeApp}
+                              alt='Recipe App Project'
                               height={400}
                               unoptimized={true}
                               className=' object-cover w-full h-48'
@@ -114,21 +115,20 @@ export default function Home() {
 
                            <div className='relative p-4'>
                               <h3 className='text-base md:text-xl font-medium text-gray-800 font-ChakraPetch'>
-                                 Strangers Things
+                                 Wife's Recipe App
                               </h3>
 
                               <p className='mt-4 text-sm md:text-md text-gray-600 pb-3 font-ChakraPetch'>
-                                 Full-stack application is similar to
-                                 Craigslist, allowing users to
-                                 register/log in and list items for
-                                 sale Utilizes API fetches and calls
-                                 to show the items for sale as well as
-                                 all the users items and messages
-                                 Developed with the React Javascrip
+                                 App built using Next.js and
+                                 Spoonacular API from RapidAPI. The
+                                 app utilizes API fetches and calls to
+                                 show recipes based on search
+                                 criteria. Developed with React and
+                                 Javascript.
                               </p>
                               <a
                                  className='  text-gray-600 hover:text-orange-500 font-ChakraPetch'
-                                 href='https://github.com/ch-MCMLXXXV/Stranger_Things'
+                                 href='https://github.com/ch-MCMLXXXV/Wife-s-Recipe-App'
                               >
                                  Source Code...
                               </a>
